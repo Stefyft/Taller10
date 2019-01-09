@@ -13,14 +13,12 @@ import java.util.Date;
 
 public class Worker extends Employee
 {   
-    //variable de tipo employeeType
-    private EmployeeType employeeType;    
 
-    public Worker(float salary, float bonusPercentage, EmployeeType employeeType)    
+
+    public Worker(float salary, float bonusPercentage)    
     {        
         this.salary = salary;        
-        this.bonusPercentage = bonusPercentage;        
-        this.employeeType = employeeType;    
+        this.bonusPercentage = bonusPercentage;         
     }    
     
     public float cs(){

@@ -5,8 +5,6 @@
  */
 package Corregido;
 
-import conmalolor.Cliente;
-
 /**
  *
  * @author Administrador
