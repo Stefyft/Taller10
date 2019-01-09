@@ -20,9 +20,13 @@ public abstract class Employee {
     protected float salary;
     //porcentaje de bonus
     protected float bonusPercentage;
+    
+    protected Fecha fecha;
+    
+   
 
     //calcula el salario dependiendo del tipo de trabajador y entrega el décimo correspondiente cada 2 meses
-    public abstract float cs(int month) ;
+    public abstract float cs() ;
 
     //calcula el bonus anual
     public abstract float CalculateYearBonus();

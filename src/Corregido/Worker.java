@@ -23,8 +23,8 @@ public class Worker extends Employee
         this.employeeType = employeeType;    
     }    
     
-    public float cs(int month){
-        return month % 2 == 0 ? salary : salary + rmu / 12 * 2;
+    public float cs(){
+        return fecha.mes() % 2 == 0 ? salary : salary + rmu / 12 * 2;
     }
     
     public float CalculateYearBonus(){
