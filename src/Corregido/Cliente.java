@@ -3,17 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package conmalolor;
+package Corregido;
+
+import conmalolor.*;
 
 
 public class Cliente {
     public String Nombre;
     public String Apellido;
     public String Cedula;
-    private String provincia;
-    private String pais;
-    private String ciudad;
-    private String direccion;
     private String telefono;
     
     public Cliente(String Nombre, String Apellido, String Cedula) {
@@ -21,6 +19,8 @@ public class Cliente {
         this.Apellido = Apellido;
         this.Cedula = Cedula;
     }
+
+    
 
     public String getNombre() {
         return Nombre;
@@ -46,17 +46,9 @@ public class Cliente {
         this.Cedula = Cedula;
     }
 
-    public String mostrarLocation(){
-        String dir = pais + " - " + provincia + " - " + ciudad;
-        return  dir+ "\n" + direccion;
-    }
+ 
     
-    public void setLocation(String nuevoPais, String ciudadnueva, String provinciaNueva, String direccionNueva){
-        pais = nuevoPais;
-        ciudad = ciudadnueva;
-        provincia = provinciaNueva;
-        direccion = direccionNueva;
-    }
+    
 
     
 }
