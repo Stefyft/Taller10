@@ -13,15 +13,16 @@ public class Cliente {
     public String Apellido;
     public String Cedula;
     private String telefono;
+    Location location;
     
-    public Cliente(String Nombre, String Apellido, String Cedula) {
+    public Cliente(String Nombre, String Apellido, String Cedula,Location location) {
         this.Nombre = Nombre;
         this.Apellido = Apellido;
         this.Cedula = Cedula;
+        this.location=location;
     }
 
-    
-
+  
     public String getNombre() {
         return Nombre;
     }
